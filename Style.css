@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+ 
+.hero {
+    height: 95vh;
+    background: linear-gradient(rgba(255, 0, 128, 0.2), rgba(0, 0, 0, 0.4)), 
+                url('imagenes/angel.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Letra más delgada y estilizada como en la imagen (font-weight cambiado a 600) */
+.hero h1 {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 4.5rem;
+    font-weight: 500; 
+    letter-spacing: 3px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Color blanco puro solo para la palabra "MUSIC" */
+.hero h1 .white-text {
+    color: #ffffff;
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 12%;
+    gap: 80px;
+}
+
+.content-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-block {
+    flex: 1;
+}
+
+.title-pink {
+    color: #ff2a6d;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
